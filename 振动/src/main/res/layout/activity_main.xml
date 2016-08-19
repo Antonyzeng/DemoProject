@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rock.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用震动棒"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="#f00"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调节你喜欢的频率"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_red" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_green" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_blue" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_all" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重复播放"/>
+
+        <CheckBox
+            android:id="@+id/cb_mainactivity_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_mainactivity_beginvibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="begin"
+        android:text="开始振动"/>
+    <Button
+        android:id="@+id/btn_mainactivity_endvibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="end"
+        android:text="停止振动"/>
+    <Button
+        android:id="@+id/btn_mainactivity_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="share"
+        android:text="分享给好友"/>
+    <Button
+        android:id="@+id/btn_mainactivity_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextactivity"
+        android:text="进入我的秘密小房间"/>
+
+</LinearLayout>
